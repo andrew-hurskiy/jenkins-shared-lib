@@ -6,7 +6,7 @@ def call(
     Boolean is_debug_on = false
     ) {
         
-    String base_url = 'https://nexu.taf.nl:8443/service/rest/repository/browse/docker-private/v2/taf/'
+    String base_url = 'https://nexus.taf.nl:8443/service/rest/repository/browse/docker-private/v2/taf/'
     String final_url = base_url + app_name + '/' + repo_type + '/tags'
     
 
