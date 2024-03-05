@@ -7,8 +7,7 @@ def call(
     ) {
         
     String base_url = 'https://nexus.taf.nl:8443/service/rest/repository/browse/docker-private/v2/taf/'
-    String final_url = base_url + app_name + '/' + repo_type + '/tags'
-    
+    String final_url = base_url + app_name + '/' + repo_type + '/tags/'
 
     String latest_tag = sh(
         script: "curl -s $final_url | grep -Eo '[[:digit:]]+\\.[[:digit:]]+\\.[[:digit:]]+' | sort -rVu | head -n 1",
