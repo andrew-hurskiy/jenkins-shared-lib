@@ -3,10 +3,6 @@
 def call(
     String name
    ) {
-    sh(
-        script: "Hello $name",
-        returnStdout: false
-    ).trim()
-    
+        sh "Hello $name"
     }
 
