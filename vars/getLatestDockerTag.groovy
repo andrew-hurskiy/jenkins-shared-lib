@@ -10,7 +10,7 @@ def call(
     String final_url = base_url + app_name + '/' + repo_type + '/tags/'
 
     String latest_tag = sh(
-        script: "curl -s $final_url | grep -Eo '[a-z-]*[^?/\][[:digit:]]+\\.[[:digit:]]+\\.[[:digit:]]+' | tr -d '>' | sort -rVu | head -n 1",
+        script: "curl -s $final_url | grep -Eo '[a-z-]*[^?\/][[:digit:]]+\\.[[:digit:]]+\\.[[:digit:]]+' | tr -d '>' | sort -rVu | head -n 1",
         returnStdout: true
     ).trim()
     
