@@ -5,7 +5,7 @@ def call(
    ) {
     sh(
         script: "Hello $name",
-        returnStdout: true
+        returnStdout: false
     ).trim()
     
     }
