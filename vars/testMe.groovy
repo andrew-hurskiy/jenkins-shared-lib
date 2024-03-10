@@ -3,6 +3,6 @@
 def call(
     String name
    ) {
-        sh "Hello $name"
+        echo "Hello $name"
     }
 
