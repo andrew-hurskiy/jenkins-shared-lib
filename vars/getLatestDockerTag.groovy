@@ -2,7 +2,7 @@
 
 def call(
     String app_name,
-    String repo_type,
+    String repo_type = "release",
     Boolean is_debug_on = false
     ) {
         
@@ -21,4 +21,3 @@ def call(
 
     return latest_tag
     }
-
